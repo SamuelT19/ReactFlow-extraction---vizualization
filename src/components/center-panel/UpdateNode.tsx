@@ -31,11 +31,18 @@ const UpdateNode: React.FC<UpdateNodeProps> = ({
     setNodes((nds) =>
       nds.map((node) => {
         if (node.id === selectedNodeId) {
-          node.data = {
-            ...node.data,
-            label: nodeName,
+
+          return {
+            ...node,
+            data: {
+              ...node.data,
+              label: nodeName,
+            },
+            style: {
+              ...node.style,
+              backgroundColor: nodeBg,
+            },
           };
-          node.style = { ...node.style, backgroundColor: nodeBg };
         }
         return node;
       })

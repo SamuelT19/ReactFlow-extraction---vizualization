@@ -41,8 +41,36 @@
 }
 
 .react-flow__node-default.selectable.selected, .react-flow__node-default.selectable:focus{
-  border: 2px solid chartreuse;
+  border: 2px solid var(--primary-color-dark);
   }
+
+        .buttons {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 1000;
+      margin-bottom: 10px;
+        }
+  
+    .buttons button {
+      margin-right: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .buttons button:hover {
+      background-color: var(--primary-color-dark);
+    }
+  
+    .buttons button:active {
+      background-color: #004080;
+    }
 
 /* -------update node--------- */
 
@@ -69,45 +97,6 @@
   align-items: center;
 }
 
-.buttons{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-}
-
-
-/* CenterPanel.css */
-
-.buttons {
-  margin-bottom: 10px;
-}
-
-.buttons button {
-  margin-right: 10px;
-  padding: 8px 16px;
-  font-size: 14px;
-  border: none;
-  border-radius: 4px;
-  background-color: var( --primary-color);
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.buttons button:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.buttons button:active {
-  background-color: #004080;
-}
-
-
-
-
-
-/* UpdateNode.css */
 
 .updatenode__controls {
   margin-top: 10px;
@@ -137,3 +126,20 @@
   display: block;
 }
 
+
+@media screen and (max-width: 950px) {
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+     .buttons button {
+       margin-right: 10px;
+       padding: 6px 10px;
+       font-size: 11px;
+       border: none;
+       border-radius: 4px;
+       
+     }
+}

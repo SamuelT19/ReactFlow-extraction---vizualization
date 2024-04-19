@@ -7,7 +7,6 @@ const LeftPanel: React.FC = () => {
   const [noValidItems, setNoValidItems] = useState<boolean>(false);
 
   const handleExtract = (): void => {
-    // Regular expression to match menu items formatted as "<number>. <Menu Text>"
     const menuRegex: RegExp = /\b\d+\.[\w\s]+\b/g;
 
     const lines: string[] = inputText.split("\n");
@@ -34,15 +33,18 @@ const LeftPanel: React.FC = () => {
       <div className="left-panel">
         <textarea
           className="text-area"
-          placeholder="menu items..."
+          placeholder="1. menu item1"
           value={inputText}
           onChange={(e: React.ChangeEvent<HTMLTextAreaElement>): void =>
             setInputText(e.target.value)
           }
         />
         <p className="note">
-          Note: The extractor processes each line individually to identify menu
-          items.
+          Note:{" "}
+          <span>
+            The extractor processes each new line individually to identify menu
+            items.
+          </span>
         </p>
         <button className="extract-button" onClick={handleExtract}>
           Extract
@@ -51,6 +53,18 @@ const LeftPanel: React.FC = () => {
           <p className="no-items-message">No valid menu items found</p>
         ) : (
           <div className="menu-items">
+            {extractedMenuItems.length > 0 && (
+              <p
+                style={{
+                  textDecoration: "underline",
+                  fontSize: "16px",
+                  fontWeight: "700",
+                }}
+              >
+                List of items
+              </p>
+            )}
+
             {extractedMenuItems.map((item: string, index: number) => (
               <p key={index}>{item}</p>
             ))}

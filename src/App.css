@@ -27,9 +27,11 @@ body {
 .header{
   height: var(--header_height);
   width: 100%;
+    margin-bottom: 10px;
 }
 .panel{
   display: flex;
+  gap: 10px;
 }
 .panel h3{
   margin-left: 4px;
@@ -38,6 +40,24 @@ body {
   width: 350px;
 }
 .center_panel_container{
-  height: calc(100vh - var(--header_height) - 25px);
+  flex-grow: 1;
+  height: calc(100vh - var(--header_height) - 35px);
   width: calc(100% - 350px);
+}
+@media screen and (max-width: 950px) {
+  .left_panel_container {
+      width: 250px;
+    }
+      
+}
+@media screen and (max-width: 700px) {
+  body{
+    overflow-y: auto;
+  }
+  .panel{
+    flex-direction: column;
+  }
+    .left_panel_container,.center_panel_container {
+      width: 100%;
+    }
 }

@@ -4,6 +4,7 @@
     padding: 20px;
     background-color: var(--primary-bg-color);
     border-right: 1px solid var(--border-color);
+    border-radius: 10px;
   }
   
   .text-area {
@@ -17,7 +18,8 @@
   }
   
   .extract-button {
-    background-color: var(--primary-color);
+    font-size: 14px;
+    background-color: rgb(243, 58, 58);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -27,7 +29,7 @@
   }
   
   .extract-button:hover {
-    background-color: var(--primary-color-dark);
+    background-color: rgb(255, 0, 0);
   }
   
   .no-items-message {
@@ -40,4 +42,13 @@
     font-weight: 700;
     margin-bottom: 4px;
   }
-  
+  .note span{
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 700px) {
+    .left-panel{
+      width: 100%;
+      height: auto;
+    }
+  }
