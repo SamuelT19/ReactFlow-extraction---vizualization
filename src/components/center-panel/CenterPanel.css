@@ -3,7 +3,6 @@
   height: 100%;
 
 }
-
 .react-flow {
   background-color: var(--primary-bg-color);
   border: 1px solid var(--border-color);
@@ -73,7 +72,7 @@
   background-color: #004080;
 }
 
-/* -------update node--------- */
+/* --------------update node------------------*/
 
 
 .updatenode__controls {
@@ -97,7 +96,6 @@
   display: flex;
   align-items: center;
 }
-
 
 .updatenode__controls {
   margin-top: 10px;
