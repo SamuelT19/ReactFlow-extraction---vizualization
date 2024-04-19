@@ -1,23 +1,26 @@
-.header_container{
+.header_container {
     height: 100%;
     width: 100%;
     background-color: rgba(159, 173, 168, 0.575);
     display: flex;
     align-items: center;
-    
+
 }
-.header_container h1{
+
+.header_container h1 {
     margin-left: 10px;
     font-size: 28px;
     padding-left: 9px;
 }
+
 @media screen and (max-width:950px) {
     .header_container h1 {
-           font-size: 26px;
-        }
+        font-size: 26px;
+    }
 }
+
 @media screen and (max-width:700px) {
     .header_container h1 {
-           font-size: 20px;
-        }
+        font-size: 20px;
+    }
 }
