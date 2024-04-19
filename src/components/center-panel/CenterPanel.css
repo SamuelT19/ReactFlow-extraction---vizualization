@@ -1,76 +1,77 @@
-.center_panel{
-   width:100%;
-    height: 100%;
+.center_panel {
+  width: 100%;
+  height: 100%;
 
 }
 
 .react-flow {
-    background-color: var(--primary-bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .react-flow__renderer {
-    height: 100%;
-  }
-  
-  .menu-items {
-    margin-top: 20px;
-  }
-  
-  .menu-items p {
-    margin: 5px 0;
-  }
-  
-  .node-default {
-    background-color: var(--node-bg-color);
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .node-default:hover {
-    background-color: var(--node-bg-color-hover);
-  }
-  
-  .react-flow .react-flow__panel.right svg{
-   background-color: #6161cf;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.react-flow__node-default.selectable.selected, .react-flow__node-default.selectable:focus{
-  border: 2px solid var(--primary-color-dark);
-  }
+.react-flow__renderer {
+  height: 100%;
+}
 
-        .buttons {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          z-index: 1000;
-      margin-bottom: 10px;
-        }
-  
-    .buttons button {
-      margin-right: 10px;
-      padding: 8px 16px;
-      font-size: 14px;
-      border: none;
-      border-radius: 4px;
-      background-color: var(--primary-color);
-      color: #ffffff;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-  
-    .buttons button:hover {
-      background-color: var(--primary-color-dark);
-    }
-  
-    .buttons button:active {
-      background-color: #004080;
-    }
+.menu-items {
+  margin-top: 20px;
+}
+
+.menu-items p {
+  margin: 5px 0;
+}
+
+.node-default {
+  background-color: var(--node-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.node-default:hover {
+  background-color: var(--node-bg-color-hover);
+}
+
+.react-flow .react-flow__panel.right svg {
+  background-color: #6161cf;
+}
+
+.react-flow__node-default.selectable.selected,
+.react-flow__node-default.selectable:focus {
+  border: 2px solid var(--primary-color-dark);
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.buttons button:active {
+  background-color: #004080;
+}
 
 /* -------update node--------- */
 
@@ -128,18 +129,18 @@
 
 
 @media screen and (max-width: 950px) {
-  .buttons{
+  .buttons {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-     .buttons button {
-       margin-right: 10px;
-       padding: 6px 10px;
-       font-size: 11px;
-       border: none;
-       border-radius: 4px;
-       
-     }
+  .buttons button {
+    margin-right: 10px;
+    padding: 6px 10px;
+    font-size: 11px;
+    border: none;
+    border-radius: 4px;
+
+  }
 }

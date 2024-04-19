@@ -7,7 +7,7 @@ const LeftPanel: React.FC = () => {
   const [noValidItems, setNoValidItems] = useState<boolean>(false);
 
   const handleExtract = (): void => {
-    const menuRegex: RegExp = /\b\d+\.[\w\s]+\b/g;
+    const menuRegex: RegExp = /\b\d+\:\s+(.+)/g;
 
     const lines: string[] = inputText.split("\n");
     const extractedItems: string[] = [];
@@ -40,7 +40,7 @@ const LeftPanel: React.FC = () => {
           }
         />
         <p className="note">
-          Note:{" "}
+          Note:
           <span>
             The extractor processes each new line individually to identify menu
             items.
