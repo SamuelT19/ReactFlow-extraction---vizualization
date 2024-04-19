@@ -33,7 +33,7 @@ const LeftPanel: React.FC = () => {
       <div className="left-panel">
         <textarea
           className="text-area"
-          placeholder="1. menu item1"
+          placeholder="1: menu item"
           value={inputText}
           onChange={(e: React.ChangeEvent<HTMLTextAreaElement>): void =>
             setInputText(e.target.value)
