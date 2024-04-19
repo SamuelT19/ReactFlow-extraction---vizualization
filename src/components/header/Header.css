@@ -1,0 +1,7 @@
+.header_container{
+    height: 100%;
+    width: 100%;
+}
+.header_container h1{
+    margin-left: 10px;
+}
