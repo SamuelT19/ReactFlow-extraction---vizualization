@@ -8,7 +8,7 @@ const LeftPanel: React.FC = () => {
 
   const handleExtract = (): void => {
     // Regular expression to match menu items formatted as "<number>. <Menu Text>"
-    const menuRegex: RegExp = /\b\d+\.\s+[\w\s]+\b/g;
+    const menuRegex: RegExp = /\b\d+\.[\w\s]+\b/g;
 
     const lines: string[] = inputText.split("\n");
     const extractedItems: string[] = [];
