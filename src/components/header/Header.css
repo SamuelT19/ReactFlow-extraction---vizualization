@@ -1,4 +1,5 @@
 .header_container {
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: rgba(159, 173, 168, 0.575);
@@ -11,6 +12,12 @@
     margin-left: 10px;
     font-size: 28px;
     padding-left: 9px;
+}
+.mine{
+    position: absolute;
+    bottom: 3px;
+    right: 20px;
+    font-size: larger;
 }
 
 @media screen and (max-width:950px) {
